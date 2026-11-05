@@ -4,6 +4,7 @@ import Home from './page/Home'
 import Courses from './page/Courses'
 import Pricing from './page/Pricing'
 import { Link } from 'react-router-dom'
+import NotFound from './page/NotFound'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/pricing' element={<Pricing />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
